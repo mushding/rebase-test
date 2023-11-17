@@ -25,6 +25,13 @@ class CalcClass():
     
     def plusplus(self, a):
         return a + 1
+    def ack(self, a, b):
+        if a == 0:
+            return b + 1
+        elif b == 0:
+            return self.ack(a - 1, 1)
+        else:
+            return self.ack(a - 1, self.ack(a, b - 1))
 
 if __name__ == '__main__':
     calc = CalcClass()
