@@ -16,6 +16,9 @@ class CalcClass():
     
     def mod(self, a, b):
         return a % b
+    
+    def pow(self, a, b):
+        return a ** b
 
 if __name__ == '__main__':
     calc = CalcClass()
