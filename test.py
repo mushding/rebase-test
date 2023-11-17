@@ -32,6 +32,8 @@ class CalcClass():
             return self.ack(a - 1, 1)
         else:
             return self.ack(a - 1, self.ack(a, b - 1))
+    def full_div(self, a, b):
+        return a // b
 
 if __name__ == '__main__':
     calc = CalcClass()
