@@ -19,6 +19,9 @@ class CalcClass():
     
     def pow(self, a, b):
         return a ** b
+    
+    def full_div(self, a, b):
+        return a // b
 
 if __name__ == '__main__':
     calc = CalcClass()
